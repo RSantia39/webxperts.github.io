@@ -86,7 +86,7 @@
 	align-content: center;
 }
 .home .home-container .left .text-1{
-	font-size: clamp(1.5rem, 5vw, 3.5rem);  
+	font-size: clamp(1rem, 5vw, 3rem);  
 	margin-top: 50px;
 }
 .home .home-container .left .text-2{
@@ -95,7 +95,7 @@
 	margin-left: -3px;
 }
 .home .home-container .left .text-3{
-	font-size: clamp(1.5rem, 5vw, 3.5rem);
+	font-size: clamp(1rem, 5vw, 3rem);
 }
 .home .home-container .left a{
 	display: inline-block;
