@@ -90,12 +90,12 @@
 	margin-top: 50px;
 }
 .home .home-container .left .text-2{
-	font-size: clamp(1.5rem, 5vw, 3.5rem);
+	font-size: clamp(2.5rem, 5vw, 5rem);
 	font-weight: 700;
 	margin-left: -3px;
 }
 .home .home-container .left .text-3{
-	font-size: 50px;
+	font-size: clamp(1.5rem, 5vw, 3.5rem);
 }
 .home .home-container .left a{
 	display: inline-block;
@@ -538,15 +538,15 @@ footer span a:hover{
     	flex: 100%;
     	padding
 	}
-	.home .home-container .left .text-1{
+	/*.home .home-container .left .text-1{
 		font-size: 25px;
 	}
-	/*.home .home-container .left .text-2{
+	home .home-container .left .text-2{
 		font-size: 39px;
-	}*/
+	}
 	.home .home-container .left .text-3{
 		font-size: 25px;
-	}
+	} replace with clamp function*/
 	.home .home-container .left .box-4{
 		padding-right: 0;
 	}
