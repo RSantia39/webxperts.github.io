@@ -90,7 +90,7 @@
 	margin-top: 50px;
 }
 .home .home-container .left .text-2{
-	font-size: 80px;
+	font-size: clamp(1.5rem, 5vw, 3.5rem);
 	font-weight: 700;
 	margin-left: -3px;
 }
