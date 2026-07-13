@@ -86,7 +86,7 @@
 	align-content: center;
 }
 .home .home-container .left .text-1{
-	font-size: 50px;  
+	font-size: clamp(2.1rem, 5vw, 5rem);  
 	margin-top: 50px;
 }
 .home .home-container .left .text-2{
