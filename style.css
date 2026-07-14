@@ -53,7 +53,7 @@
 }
 .navbar .menu li a:hover{
 	color: darkturquoise;
-	transform: scale(1.0);
+	transform: scale(1.05);
 }
 
 /*Menu button*/
@@ -65,9 +65,9 @@
 .home{
 	display: flex;
 	justify-content: center;  
- 	align-items: center;  
+ 	align-items: center;     
 	background: url("images/bg-www.jpg") repeat center;
-	color: ghostwhite;
+	color: white;
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: 'Montserrat', sans-serif;
@@ -86,19 +86,17 @@
 	align-content: center;
 }
 .home .home-container .left .text-1{
-	font-size: clamp(1rem, 5vw, 3rem);  
-	line-height: 1.2;
+	font-size: 50px;  
 	margin-top: 50px;
 }
 .home .home-container .left .text-2{
 	font-size: clamp(32px, 5vw, 64px);
-  	line-height: 1.2;
+	line-height: 1.2;
 	font-weight: 700;
 	margin-left: -3px;
 }
 .home .home-container .left .text-3{
-	font-size: clamp(1rem, 5vw, 3rem);
-	line-height: 1.2;
+	font-size: 50px;
 }
 .home .home-container .left a{
 	display: inline-block;
@@ -108,9 +106,8 @@
 	padding: 12px 36px;
 	margin-top: 20px;
 	border: 2px solid white;
-	border-radius: 15px;
+	border-radius: 50px;
 	transition: all 0.5s linear;
-
 }
 .home .home-container .left a:hover{
 	background: darkturquoise;
@@ -172,15 +169,19 @@ section{
 	justify-content: space-between;
 }
 .about .about-content .left{
-	width: 40%;
-	display: flex;
-  	flex-direction: column;
-	
+	width: 30%;
+	text-align: center;
+	padding: 20px;
+  border-radius: 12px;
+	margin: auto;
+	/*display: flex;
+  flex-direction: column;*/
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .about .about-content .left img{
 	border-radius: 18px;
-	border-style: solid;
-	border-color: turquoise;
+	border: 4px solid turquoise;
 	box-shadow: 5px 10px 18px #888888;
 	height: 300px;
 	width: 300px;
@@ -193,7 +194,12 @@ section{
 
 .about .about-content .left .lead-label{
 	margin-top: 15px;
-  	margin-left: 30px;
+  font-size: 20px;
+  color: #00796b;
+}
+.about .about-content .left .role{
+  font-size: 14px;
+  color: #555;
 }
 .about .about-content .right{
 	width: 60%;
@@ -205,6 +211,102 @@ section{
 .about .about-content .right p{
 	font-size: 20px;
 	text-align: justify;
+}
+
+/*Choose-us section style*/
+.choose-us{
+	position: relative;
+  	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.choose-us .background-clip {
+  position: absolute;   /*Fixed to full screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* This will keep the video filling the container */
+  object-position: center;
+  z-index: -1;        
+}
+.choose-us .container .content{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+}
+.choose-us .container h1{
+	font-size: 30px;
+	color: white;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.choose-us .container .content h2{
+	font-size: 20px;
+	color: white;
+	margin-bottom: 20px;
+}
+.content ul{
+	margin: auto;
+}
+.content ul li{
+	font-size: 18px;
+	color: white;
+	margin-bottom: 20px;
+	text-align: justify;
+	list-style-position: inside;
+}
+.choose-us .content .left{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.choose-us .content .left p{
+	font-size: 18px;
+	color: white;
+	text-indent: 40px;
+	text-align: justify;
+}
+.choose-us .content .second-paragraph{
+	display: block;
+	text-indent: 40px;
+	margin-top: 20px;
+}
+.content a{
+	font-size: 23px;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	padding: 15px 25px;
+	border-radius: 50px;
+	transition: 0.3s;
+}
+.content a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.choose-us .content .column{
+	width: calc(50% - 40px);
+}
+
+.choose-us .content .left, .choose-us .content .right{
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 20px 20px;
+	margin-bottom: 30px;
+	background-color: rgba(0, 128, 128, 0.3);
+}
+.choose-us .background-clip{
+	position: absolute;
+	z-index: -1;
 }
 
 /*Style for Services Section*/
@@ -260,7 +362,7 @@ section{
 	font-size: 18px;
 }
 
-/*Style Skills Section*/
+/*Style for Skills Section*/
 .skills{
 	display: flex;
 	background: url("images/banner-3.jpg") no-repeat center;
@@ -302,7 +404,7 @@ section{
 	padding: 12px 36px;
 	margin-top: 20px;
 	border: 2px solid white;
-	border-radius: 15px;
+	border-radius: 50px;
 }
 .skills .skills-content .left a:hover{
 	background: turquoise;
@@ -340,7 +442,7 @@ section{
 	background: teal;
 }
 .skills-content .right .html::before{
-	width: 90%;
+	width: 88%;
 }
 .skills-content .right .css::before{
 	width: 85%;
@@ -452,13 +554,14 @@ section{
 	border: 2px solid white;
 	color: white;
 	font-size: 18px;
-	border-radius: 6px;
+	border-radius: 50px;
 	cursor: pointer;
 }
 .contact .right form .button button:hover{
 	color: white;
 	border: 2px solid white;
 	background: darkturquoise;
+	transition: all 0.5s linear;
 }
 
 /*Footer styling*/
@@ -541,15 +644,15 @@ footer span a:hover{
     	flex: 100%;
     	padding
 	}
-	/*.home .home-container .left .text-1{
+	.home .home-container .left .text-1{
 		font-size: 25px;
 	}
-	home .home-container .left .text-2{
+	/*.home .home-container .left .text-2{
 		font-size: 39px;
-	}
+	}*/
 	.home .home-container .left .text-3{
 		font-size: 25px;
-	} replace with clamp function*/
+	}
 	.home .home-container .left .box-4{
 		padding-right: 0;
 	}
@@ -582,12 +685,14 @@ footer span a:hover{
 	.about .about-content .right{
 		flex: 100%;
 	}
+	
 	.services .services-content .card{
 		width: calc(100% - 10px);
 		margin-bottom: 35px;
 	}
 	.skills .skills-content .column, 
-	.contact .contact-content .column{
+	.contact .contact-content .column, 
+	.choose-us .container .content .column{
 		width: 100%;
 		margin-bottom: 35px;
 	}
@@ -607,5 +712,19 @@ footer span a:hover{
 	.contact .right form .name,
 	.contact .right form .email{
 		margin: 0;
+	}
+}
+
+/*Choose Section Video background Media Query*/
+@media (min-aspect-ratio:16/9){
+	.choose-us .background-clip{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio:16/9) {
+	.choose-us .background-clip{
+		width: auto;
+		height: 100%;
 	}
 }
