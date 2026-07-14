@@ -64,8 +64,8 @@
 /*Style for Home section*/
 .home{
 	display: flex;
-	justify-content: center;  /* center horizontally */
- 	align-items: center;      /* center vertically */
+	justify-content: center;  
+ 	align-items: center;  
 	background: url("images/bg-www.jpg") repeat center;
 	color: ghostwhite;
 	background-size: cover;
